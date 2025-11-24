@@ -8,12 +8,12 @@ It supports **user authentication**, **book search**, **borrowed-book tracking**
 
 Developed as part of academic coursework, this project showcases:
 
-- ✅ Java **OOP design**
-- ✅ GUI development with **Swing**
-- ✅ **MySQL** database integration
-- ✅ Form-based user interactions
-- ✅ Basic **CRUD** logic
-- ✅ SQL schema creation & automatic data loading
+-  Java **OOP design**
+-  GUI development with **Swing**
+-  **MySQL** database integration
+-  Form-based user interactions
+-  Basic **CRUD** logic
+-  SQL schema creation & automatic data loading
 
 
 
