@@ -12,12 +12,12 @@ public class DatabaseInitializer {
 
             // Σύνδεση στον server (χωρίς βάση)
             Connection connection = DriverManager.getConnection(url, username, password);
-            System.out.println("✅ Συνδέθηκα στον MySQL Server.");
+            System.out.println(" Συνδέθηκα στον MySQL Server.");
 
             // Δημιουργία βάσης αν δεν υπάρχει
             Statement stmt = connection.createStatement();
             stmt.executeUpdate("CREATE DATABASE IF NOT EXISTS " + dbName);
-            System.out.println("✅ Δημιουργήθηκε η βάση '" + dbName + "'.");
+            System.out.println(" Δημιουργήθηκε η βάση '" + dbName + "'.");
 
             stmt.close();
             connection.close();
@@ -37,7 +37,7 @@ public class DatabaseInitializer {
                     city VARCHAR(100)
                 )
             """);
-            System.out.println("✅ Ο πίνακας Users δημιουργήθηκε.");
+            System.out.println(" Ο πίνακας Users δημιουργήθηκε.");
 
             // Πίνακας Books
             stmt.executeUpdate("""
@@ -48,7 +48,7 @@ public class DatabaseInitializer {
                     summary TEXT
                 )
             """);
-            System.out.println("✅ Ο πίνακας Books δημιουργήθηκε.");
+            System.out.println(" Ο πίνακας Books δημιουργήθηκε.");
 
             // Πίνακας Authors (με σχέση με Books)
             stmt.executeUpdate("""
@@ -59,7 +59,7 @@ public class DatabaseInitializer {
                     FOREIGN KEY (isbn) REFERENCES Books(isbn)
                 )
             """);
-            System.out.println("✅ Ο πίνακας Authors δημιουργήθηκε.");
+            System.out.println(" Ο πίνακας Authors δημιουργήθηκε.");
 
             // Πίνακας Loans (με σχέση με Users & Books)
             stmt.executeUpdate("""
@@ -72,11 +72,11 @@ public class DatabaseInitializer {
                     FOREIGN KEY (username) REFERENCES Users(username)
                 )
             """);
-            System.out.println("✅ Ο πίνακας Loans δημιουργήθηκε.");
+            System.out.println(" Ο πίνακας Loans δημιουργήθηκε.");
 
             stmt.close();
             connection.close();
-            System.out.println("✅ Όλα ολοκληρώθηκαν με επιτυχία.");
+            System.out.println(" Όλα ολοκληρώθηκαν με επιτυχία.");
 
         } catch (Exception e) {
             e.printStackTrace();
