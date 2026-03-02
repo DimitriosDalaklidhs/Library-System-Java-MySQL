@@ -128,14 +128,14 @@ public class SearchForm extends JFrame {
                 insertStmt.setDate(3, new Date(System.currentTimeMillis()));
                 insertStmt.executeUpdate();
 
-                JOptionPane.showMessageDialog(this, "✅ Επιτυχής Δανεισμός Βιβλίου.");
+                JOptionPane.showMessageDialog(this, " Επιτυχής Δανεισμός Βιβλίου.");
             } else {
-                JOptionPane.showMessageDialog(this, "⚠ Το βιβλίο δεν είναι διαθέσιμο. Παρακαλώ επιλέξτε άλλο.");
+                JOptionPane.showMessageDialog(this, " Το βιβλίο δεν είναι διαθέσιμο. Παρακαλώ επιλέξτε άλλο.");
             }
 
         } catch (Exception ex) {
             ex.printStackTrace();
-            JOptionPane.showMessageDialog(this, "❌ Σφάλμα κατά τη διαδικασία κράτησης.");
+            JOptionPane.showMessageDialog(this, " Σφάλμα κατά τη διαδικασία κράτησης.");
         }
     }
 }
