@@ -48,7 +48,7 @@ public class MyBooksForm extends JFrame {
 
         } catch (Exception e) {
             e.printStackTrace();
-            JOptionPane.showMessageDialog(this, "❌ Σφάλμα κατά τη φόρτωση των βιβλίων.");
+            JOptionPane.showMessageDialog(this, " Σφάλμα κατά τη φόρτωση των βιβλίων.");
         }
 
         JScrollPane scrollPane = new JScrollPane(table);
