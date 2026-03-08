@@ -36,7 +36,7 @@ Developed as part of academic coursework, this project showcases:
 ###  MySQL Integration
 - SQL schema creation  
 - Automated table creation via `DatabaseInitializer.java`  
-- Includes `library_dump.sql` for quick setup  
+- Includes `library_dump.sql` for that quick setup  
 
 ###  GUI (Swing)
 Multiple Java Swing forms provide a simple, user-friendly interface:
