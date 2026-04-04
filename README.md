@@ -12,7 +12,7 @@ Developed as part of academic coursework, this project showcases:
 -  GUI development with **Swing**
 -  **MySQL** database integration
 -  Form-based user interactions
--  Basic **CRUD** logic
+-  Basic **CRUD** logic.
 -  SQL schema creation & automatic data loading
 
 
