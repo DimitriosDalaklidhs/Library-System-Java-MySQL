@@ -10,23 +10,23 @@ Developed as part of academic coursework, this project showcases:
 
 -  Java **OOP design**
 -  GUI development with **Swing**
--  **MySQL** database integration
--  Form-based user interactions
+-  **MySQL** database integration.
+-  Form-based user interactions.
 -  Basic **CRUD** logic.
--  SQL schema creation & automatic data loading
+-  SQL schema creation & automatic data loading.
 
 
 
 ##  Features
 
 ###  User Authentication
-- Login form with credential validation  
-- Error handling and friendly user feedback  
+- Login form with credential validation.  
+- Error handling and friendly user feedback.  
 
 ###  Search Books
 - Search by **title** or **author**  
 - Results displayed in a clean **Swing table**  
-- Backed by SQL queries  
+- Backed by SQL queries.  
 
 ###  Borrowed Books Management
 - View a list of borrowed books  
